@@ -4,6 +4,9 @@ Dockerfile
 Jenkinsfile
 settings.xml
 
+can pull and run the docker image from my jfrog account using below commands
+docker pull paladugu.jfrog.io/paladugu/petclinic:v3 
+docker run -itd -p 8081:8081 paladugu.jfrog.io/paladugu/petclinic:v3
 
 
 Step 1: I have created a jfrog account and added a repo for docker 
