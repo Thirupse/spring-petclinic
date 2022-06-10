@@ -3,13 +3,13 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <servers>
     <server>
-      <username>thirup.se@gmail.com</username>
-      <password>AKCp8mZ8WwiiXSAN7KA3XPuBjfBmmcEVurxfnHiZ8r7Cy16DbKobaW4x3xMmHyNfwkLabr8uv</password>
+      <username>varun020720@gmail.com</username>
+      <password>AP32FzmEVJBhTFjPhjejQEa8B7C</password>
       <id>central</id>
     </server>
     <server>
-      <username>thirup.se@gmail.com</username>
-      <password>AKCp8mZ8WwiiXSAN7KA3XPuBjfBmmcEVurxfnHiZ8r7Cy16DbKobaW4x3xMmHyNfwkLabr8uv</password>
+      <username>varun020720@gmail.com</username>
+      <password>AP32FzmEVJBhTFjPhjejQEa8B7C</password>
       <id>snapshots</id>
     </server>
   </servers>
@@ -21,14 +21,14 @@
             <enabled>false</enabled>
           </snapshots>
           <id>central</id>
-          <name>default-maven-virtual</name>
-          <url>https://thirup.jfrog.io/artifactory/default-maven-virtual</url>
+          <name>paladugu-libs-release</name>
+          <url>https://paladugu.jfrog.io/artifactory/paladugu-libs-release</url>
         </repository>
         <repository>
           <snapshots />
           <id>snapshots</id>
-          <name>default-maven-virtual</name>
-          <url>https://thirup.jfrog.io/artifactory/default-maven-virtual</url>
+          <name>paladugu-libs-snapshot</name>
+          <url>https://paladugu.jfrog.io/artifactory/paladugu-libs-snapshot</url>
         </repository>
       </repositories>
       <pluginRepositories>
@@ -37,14 +37,14 @@
             <enabled>false</enabled>
           </snapshots>
           <id>central</id>
-          <name>default-maven-virtual</name>
-          <url>https://thirup.jfrog.io/artifactory/default-maven-virtual</url>
+          <name>paladugu-libs-release</name>
+          <url>https://paladugu.jfrog.io/artifactory/paladugu-libs-release</url>
         </pluginRepository>
         <pluginRepository>
           <snapshots />
           <id>snapshots</id>
-          <name>default-maven-virtual</name>
-          <url>https://thirup.jfrog.io/artifactory/default-maven-virtual</url>
+          <name>paladugu-libs-snapshot</name>
+          <url>https://paladugu.jfrog.io/artifactory/paladugu-libs-snapshot</url>
         </pluginRepository>
       </pluginRepositories>
       <id>artifactory</id>
