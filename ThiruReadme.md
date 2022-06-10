@@ -44,6 +44,8 @@ Step 7: created an aws account as I need a vm to run jenkins pipeline
         
         
         
+        
+        
     
  
         
