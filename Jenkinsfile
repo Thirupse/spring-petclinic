@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Cloning REpo') {
             steps {
-                 git branch: 'main', url: 'https://github.com/paladugu9/spring-petclinic.git'
+                 git branch: 'main', url: 'https://github.com/thirupse/spring-petclinic.git'
                 
             }
         }
@@ -30,10 +30,8 @@ pipeline {
                 sh 'docker login paladugu.jfrog.io -u ${username} -p ${password}' 
                 sh 'docker tag petclinic:v1 paladugu.jfrog.io/paladugu/petclinic:v1'
                 sh 'docker push  paladugu.jfrog.io/paladugu/petclinic:v1'
-
-              
                 //below are run command
-                // sh 'docker run -itd -p 8081:8081 petclinic:v1'
+                sh 'docker run -itd -p 8081:8081 paladugu.jfrog.io/paladugu/petclinic:v1'
                 }}
             }}
     }
