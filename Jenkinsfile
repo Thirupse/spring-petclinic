@@ -26,14 +26,14 @@ pipeline {
                    withCredentials([usernamePassword(credentialsId: 'paladugu', passwordVariable: 'password', usernameVariable: 'username')])
                     {
                 sh 'docker images'
-                sh 'docker build -t petclinic:v2 .'
+                sh 'docker build -t petclinic:v3 .'
                 sh 'docker login paladugu.jfrog.io -u ${username} -p ${password}' 
-                sh 'docker tag petclinic:v1 paladugu.jfrog.io/paladugu/petclinic:v2'
-                sh 'docker push  paladugu.jfrog.io/paladugu/petclinic:v2'
+                sh 'docker tag petclinic:v3 paladugu.jfrog.io/paladugu/petclinic:v3'
+                sh 'docker push  paladugu.jfrog.io/paladugu/petclinic:v3'
 
               
                 //below are run command
-                sh 'docker run -itd -p 8081:8081 paladugu.jfrog.io/paladugu/petclinic:v2'
+                sh 'docker run -itd -p 8081:8081 paladugu.jfrog.io/paladugu/petclinic:v3'
                 }}
             }}
     }
